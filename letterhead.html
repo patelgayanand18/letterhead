@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genv Tech - Official Letterhead</title>
+    <style>
+        /* A4 Print Setup */
+        @page { size: A4; margin: 0; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #e2e8f0; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        
+        /* The Physical Paper */
+        .a4-sheet { background-color: white; width: 210mm; min-height: 297mm; padding: 25mm 20mm; box-sizing: border-box; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative; }
+        
+        /* Letterhead Header */
+        .header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #1e293b; padding-bottom: 15px; margin-bottom: 25px; }
+        .logo-area { width: 240px; }
+        .company-info { text-align: right; color: #475569; font-size: 11px; line-height: 1.6; }
+        .company-info strong { color: #1e293b; }
+        .company-name-text { font-size: 16px; font-weight: 800; color: #1e293b; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* Letter Content */
+        .ref-date { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 40px; font-size: 13px; color: #1e293b; }
+        .letter-body { font-size: 14px; line-height: 1.6; color: #1e293b; }
+        .letter-body h2 { font-size: 15px; text-align: center; text-decoration: underline; margin-bottom: 30px; text-transform: uppercase;}
+        .letter-body p { margin-bottom: 15px; text-align: justify; }
+        
+        /* Signature & Stamp Area */
+        .auth-area { margin-top: 50px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .signature-block { width: 250px; }
+        .signature-line { width: 100%; border-bottom: 1px solid #1e293b; margin-bottom: 8px; }
+        .stamp-block { width: 150px; height: 150px; border: 1px dashed #cbd5e1; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #94a3b8; font-size: 11px; text-align: center; }
+
+        /* Footer */
+        .footer { position: absolute; bottom: 15mm; left: 20mm; right: 20mm; text-align: center; font-size: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; }
+
+        /* Browser Print Override */
+        @media print {
+            body { background: none; padding: 0; }
+            .a4-sheet { box-shadow: none; width: 100%; height: 100%; padding: 25mm 20mm; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="a4-sheet">
+    
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo-area">
+            <!-- Cyber-Shield Matrix Logo SVG -->
+            <svg viewBox="20 15 350 110" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="75,15 115,35 115,95 75,115 35,95 35,35" fill="none" stroke="#1e293b" stroke-width="6"/>
+                <path d="M 55,45 L 95,45" stroke="#1e293b" stroke-width="10" stroke-linecap="round"/>
+                <path d="M 55,65 L 75,65" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round"/>
+                <path d="M 55,85 L 95,85 L 95,65 L 85,65" fill="none" stroke="#1e293b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="135" y="74" font-size="44" font-weight="900" font-family="Segoe UI, sans-serif" fill="#1e293b" letter-spacing="1">GENV</text>
+                <text x="265" y="74" font-size="44" font-weight="300" font-family="Segoe UI, sans-serif" fill="#64748b" letter-spacing="1">TECH</text>
+                <text x="138" y="102" font-size="12" font-weight="700" font-family="Segoe UI, sans-serif" letter-spacing="6" fill="#0ea5e9">SOLUTIONS</text>
+            </svg>
+        </div>
+        <div class="company-info">
+            <div class="company-name-text">Genv Tech Solutions Pvt. Ltd.</div>
+            Ward No. 4, Malangwa, Sarlahi, Nepal<br>
+            <strong>Regd No:</strong> 403397/83/84 | <strong>PAN:</strong> 624718602<br>
+            <strong>Ph:</strong> +977-[Your Phone] | <strong>Web:</strong> genvtechsolutions.com.np
+        </div>
+    </div>
+
+    <!-- METADATA -->
+    <div class="ref-date">
+        <div>Ref No: 01/083/84</div>
+        <div>Date: _________________</div>
+    </div>
+
+    <!-- BODY -->
+    <div class="letter-body">
+        <h2>Application for Domain Registration (.com.np)</h2>
+        <br>
+        <p><strong>To,</strong><br>
+        The Hostmaster<br>
+        Mercantile Communications Pvt. Ltd.<br>
+        Durbar Marg, Kathmandu, Nepal</p>
+        <br>
+        <p>Dear Sir/Madam,</p>
+        
+        <p>I am writing to formally request the registration of the domain name <strong>genvtechsolutions.com.np</strong> for our company, Genv Tech Solutions Pvt. Ltd.</p>
+        
+        <p>Our company is a legally registered IT firm under the Office of the Company Registrar, Government of Nepal (Registration Number: 403397/83/84) and holds a valid PAN certificate (PAN: 624718602). We are based in Ward No. 4, Malangwa, Sarlahi.</p>
+        
+        <p>We are excited to establish our digital presence and have submitted the necessary scanned copies of our Company Registration Certificate and PAN certificate along with this application via your online portal. We assure you that this domain will be used solely for the official business purposes of Genv Tech Solutions.</p>
+        
+        <p>We kindly request you to process our domain registration at your earliest convenience.</p>
+        
+        <p>Thank you for your time and assistance.</p>
+
+        <!-- SIGNATURE & STAMP -->
+        <div class="auth-area">
+            <div class="signature-block">
+                <p>Sincerely,</p>
+                <br><br><br>
+                <div class="signature-line"></div>
+                <strong>[Your Full Name]</strong><br>
+                Managing Director<br>
+                Genv Tech Solutions Pvt. Ltd.
+            </div>
+            
+            <!-- A subtle target area for your physical stamp -->
+            <div class="stamp-block">
+                [ Place Official<br>Company Stamp Here ]
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Genv Tech Solutions Pvt. Ltd. | Ward No. 4, Malangwa, Sarlahi, Nepal | PAN: 624718602 
+    </div>
+
+</div>
+
+</body>
+</html>
